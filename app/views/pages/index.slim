@@ -1,0 +1,91 @@
+.banner
+    .row
+        .columns.medium-6
+            .name Delegowanie24
+            .block
+                h1
+                    | Uslugi skrojone
+                    br /
+                    | na miare 
+                    span Twoich potrzeb!
+                p Kompleksowa obsluga firm delegujacych pracownikow za granice oraz zatrudniajacych cudzoziemcow.
+            .button= link_to 'Poznaj uslugi', '#'
+.nav
+    .row
+        .columns.small-12
+            nav
+                ul
+                    li= link_to 'Uslugi', uslugi_pages_path
+                    li= link_to 'O kancelarii', about_pages_path
+                    li= link_to 'Kontakt', contacts_pages_path
+                .links
+                    = link_to image_tag('facebook.png'), '#'
+                    = link_to image_tag('linkedin.png'), '#'
+                .call
+                    = link_to image_tag('call.png'), '#'
+            .name Delegowanie24
+section.text_block
+    .row
+        .columns.medium-8
+            .main_article
+                .title Tytul
+                .date 23.2017
+                .photo= image_tag 'article_main.jpg'
+                .text Lorem ipsum dolor
+                .button= link_to 'Czytaj dalej', '#'
+            .other_articles
+                .article
+                    .photo= image_tag 'article.jpg'
+                    .title Tytul
+                    .text Lorem ipsum dolor
+                    .date 23.2017
+                .article
+                    .photo= image_tag 'article.jpg'
+                    .title Tytul
+                    .text Lorem ipsum dolor
+                    .date 23.2017
+                .article
+                    .photo= image_tag 'article.jpg'
+                    .title Tytul
+                    .text Lorem ipsum dolor
+                    .date 23.2017
+                .article
+                    .photo= image_tag 'article.jpg'
+                    .title Tytul
+                    .text Lorem ipsum dolor
+                    .date 23.2017
+            .buttons
+                .button= link_to 'Poprzednie', '#'
+                .button= link_to 'Nastepne', '#'
+        .columns.medium-4
+            .right_block
+                .block.editors
+                    h2 Redaktorzy:
+                    .editor
+                        .image= image_tag 'editor.png'
+                        .name Joanna Kowalska
+                    .editor
+                        .image= image_tag 'editor.png'
+                        .name Joanna Kowalska
+                    .editor
+                        .image= image_tag 'editor.png'
+                        .name Joanna Kowalska
+                .block.media
+                    h2 Social media:
+                    = link_to image_tag('facebook.png'), '#'
+                    = link_to image_tag('linkedin.png'), '#'
+                .block.contacts
+                    h2 Kontakt
+                    .half
+                        p +48 123 456 789
+                        p lorem@ipsum.pl
+                    .half
+                        p Address
+footer
+    .row
+        .columns.medium-6
+            p.white &copy; copyright Delegowanie.pl
+        .columns.medium-6
+            p
+                | Strategia, realizacja, wsparcie 
+                span Tomczak | Stanislawski
