@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
     font-size: 20px;
+    &:focus {
+        outline: none;
+    }
 }
 
 html, body {
@@ -22,15 +25,13 @@ h1, h2, h3 {
 body {
     .button {
         background: none;
-        padding: 10px 20px;
         border: 1px solid #FFF;
         border-radius: 10px;
-        a {
-            font-size: 16px;
-            color: #FFF;
-            text-transform: uppercase;
-            font-family: 'Montserrat';
-        }
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #FFF;
+        text-transform: uppercase;
+        font-family: 'Montserrat';
         &:hover {
             background: none;
         }
@@ -287,6 +288,36 @@ footer {
             font-size: 16px;
             font-weight: 600;
             text-transform: uppercase;
+        }
+    }
+}
+
+#uslugi {
+    background: rgba(35, 65, 90, 0.9);
+    color: #FFF;
+    padding-top: 0;
+    .name {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 30px 0;
+    }
+    .blocks {
+        width: 640px;
+        .block {
+            display: inline-block;
+            width: 300px;
+            margin: 0 20px 20px 0;
+            border: 1px solid #FFF;
+            padding: 25px;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .close-button {
+        span {
+            color: #FFF;
+            font-size: 40px;
         }
     }
 }

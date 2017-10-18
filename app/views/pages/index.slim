@@ -9,7 +9,7 @@
                     | na miare 
                     span Twoich potrzeb!
                 p Kompleksowa obsluga firm delegujacych pracownikow za granice oraz zatrudniajacych cudzoziemcow.
-            .button= link_to 'Poznaj uslugi', '#'
+            button.button data-open='uslugi' Poznaj uslugi
 .nav
     .row
         .columns.small-12
@@ -89,3 +89,4 @@ footer
             p
                 | Strategia, realizacja, wsparcie 
                 span Tomczak | Stanislawski
+= render 'shared/uslugi'
