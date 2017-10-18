@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: 5432
+  username: <%= ENV['DELEGOWANIE_DATABASE_USERNAME'] %>
+  password: <%= ENV['DELEGOWANIE_DATABASE_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: delegowanie_development
+
+test:
+  <<: *default
+  database: delegowanie_test
+
+production:
+  <<: *default
+  database: delegowanie_production
