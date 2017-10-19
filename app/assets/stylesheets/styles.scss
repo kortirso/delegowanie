@@ -98,10 +98,16 @@ body {
         top: 50px;
     }
     .nav {
-        position: absolute;
-        bottom: 0;
+        position: fixed;
+        top: 0;
         left: 0;
         width: 100%;
+        z-index: 1;
+        &.no_logo {
+            position: absolute;
+            bottom: 0;
+            top: auto;
+        }
     }
 }
 

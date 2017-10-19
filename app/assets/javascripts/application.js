@@ -27,4 +27,16 @@ $(function() {
             elem.addClass('open');
         }
     });
+
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        var height = $('.banner').height() - 94;
+        if (scroll >= height) {
+            $('.nav').removeClass('no_logo');
+        } else {
+            if ($('.nav').hasClass('no_logo') == false) {
+                $('.nav').addClass('no_logo');
+            }
+        }
+    });
 });

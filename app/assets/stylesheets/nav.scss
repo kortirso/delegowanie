@@ -3,10 +3,42 @@
     .name {
         padding: 25px 0;
         margin: 0;
-        a {
-            color: #23395f;
-            font-size: 24px;
-            font-weight: 600;
+        .logo {
+            a {
+                color: #23395f;
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+        ul {
+            display: none;
+        }
+    }
+    &.no_logo {
+        .name {
+            .logo {
+                display: none;
+            }
+            ul {
+                list-style: none;
+                display: inline-block;
+                margin: 0;
+                li {
+                    display: inline-block;
+                    padding: 0 20px;
+                    a {
+                        &.active {
+                            font-weight: 600;
+                            color: #23395f;
+                        }
+                    }
+                }
+            }
+        }
+        nav {
+            ul {
+                display: none;
+            }
         }
     }
     nav {
