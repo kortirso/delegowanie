@@ -8,6 +8,7 @@
         margin: 0;
     }
     nav {
+        position: relative;
         float: right;
         padding: 20px 0;
         ul {
@@ -38,6 +39,22 @@
             img {
                 width: 51px;
                 border-radius: 25px;
+            }
+        }
+        .phone {
+            position: absolute;
+            bottom: -180px;
+            right: 0;
+            display: none;
+            background: #2a4065;
+            border-radius: 65px 0 65px 0;
+            padding: 60px;
+            color: #FFF;
+            .tel {
+                font-weight: 600;
+            }
+            &.open {
+                display: block;
             }
         }
     }

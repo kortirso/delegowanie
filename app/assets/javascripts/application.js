@@ -15,4 +15,15 @@
 //= require foundation
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function() {
+    $(document).foundation();
+
+    $('.call a').on('click', function () {
+        var elem = $('nav .phone');
+        if (elem.hasClass('open')) {
+            elem.removeClass('open');
+        } else {
+            elem.addClass('open');
+        }
+    });
+});
