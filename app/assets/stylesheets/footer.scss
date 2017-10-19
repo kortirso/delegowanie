@@ -1,0 +1,17 @@
+footer {
+    background: #9bacbe;
+    padding: 20px 0;
+    p {
+        font-size: 16px;
+        font-family: 'Montserrat';
+        margin: 0;
+        &.white {
+            color: #FFF;
+        }
+        span {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+}

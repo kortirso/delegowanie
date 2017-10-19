@@ -1,1 +1,39 @@
-h1 About
+- provide(:path, 'about')
+= render 'shared/nav'
+section.text_block
+    .row
+        .columns.medium-8
+            .main_article.about
+                .title Tytul
+                .photo= image_tag 'article_main.jpg'
+                .text.bold Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                h3 Lorem ipsum dolor
+                .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                h3 Lorem ipsum dolor
+                .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                .date Jan Kowalski | 23.2017
+    .row
+        .columns.small-12.about_block
+            h2 Powiazane artykuly:
+            .other_articles.about
+                .article
+                    .photo= image_tag 'article.jpg'
+                    .title Tytul
+                    .text Lorem ipsum dolor
+                    .date 23.2017
+                .article
+                    .photo= image_tag 'article.jpg'
+                    .title Tytul
+                    .text Lorem ipsum dolor
+                    .date 23.2017
+                .article
+                    .photo= image_tag 'article.jpg'
+                    .title Tytul
+                    .text Lorem ipsum dolor
+                    .date 23.2017
+            .buttons
+                .button= link_to 'Poprzednie', '#'
+                .button= link_to 'Nastepne', '#'
+= render 'shared/footer'

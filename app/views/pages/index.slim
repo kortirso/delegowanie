@@ -10,20 +10,7 @@
                     span Twoich potrzeb!
                 p Kompleksowa obsluga firm delegujacych pracownikow za granice oraz zatrudniajacych cudzoziemcow.
                 button.button data-open='uslugi' Poznaj uslugi
-    .nav
-        .row
-            .columns.small-12
-                nav
-                    ul
-                        li= link_to 'Uslugi', uslugi_pages_path
-                        li= link_to 'O kancelarii', about_pages_path
-                        li= link_to 'Kontakt', contacts_pages_path
-                    .links
-                        = link_to image_tag('facebook.png'), '#'
-                        = link_to image_tag('linkedin.png'), '#'
-                    .call
-                        = link_to image_tag('call.png'), '#'
-                .name Delegowanie24
+    = render 'shared/nav'
 section.text_block
     .row
         .columns.medium-8
@@ -81,12 +68,5 @@ section.text_block
                         p lorem@ipsum.pl
                     .half
                         p Address
-footer
-    .row
-        .columns.medium-6
-            p.white &copy; copyright Delegowanie.pl
-        .columns.medium-6
-            p
-                | Strategia, realizacja, wsparcie 
-                span Tomczak | Stanislawski
+= render 'shared/footer'
 = render 'shared/uslugi'
