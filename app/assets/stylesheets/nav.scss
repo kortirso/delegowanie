@@ -1,11 +1,13 @@
 .nav {
     background: #FFF;
     .name {
-        color: #23395f;
-        font-size: 24px;
-        font-weight: 600;
         padding: 25px 0;
         margin: 0;
+        a {
+            color: #23395f;
+            font-size: 24px;
+            font-weight: 600;
+        }
     }
     nav {
         position: relative;

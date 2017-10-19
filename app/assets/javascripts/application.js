@@ -18,7 +18,8 @@
 $(function() {
     $(document).foundation();
 
-    $('.call a').on('click', function () {
+    $('.call a').on('click', function (e) {
+        e.preventDefault();
         var elem = $('nav .phone');
         if (elem.hasClass('open')) {
             elem.removeClass('open');
