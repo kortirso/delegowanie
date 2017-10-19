@@ -6,4 +6,6 @@ class PagesController < ApplicationController
     def uslugi; end
 
     def about; end
+
+    def blog; end
 end
