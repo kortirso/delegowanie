@@ -1,15 +1,19 @@
 footer {
     background: #9bacbe;
-    padding: 20px 0;
+    padding: 13px 0;
     p {
-        font-size: 16px;
+        font-size: 14px;
         font-family: 'Montserrat';
         margin: 0;
         &.white {
             color: #FFF;
         }
+        &.right {
+            text-align: right;
+            font-weight: 300;
+        }
         span {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             text-transform: uppercase;
         }
