@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600|Montserrat:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,800|Montserrat:300,400,500,700');
 
 * {
     font-family: 'Dosis';
@@ -119,6 +119,110 @@ body {
             position: absolute;
             bottom: 0;
             top: auto;
+        }
+    }
+}
+
+.banner_uslugi {
+    height: 100%;
+    background: image-url('background_uslugi.jpg');
+    background-size: cover;
+    background-position: bottom right;
+    color: #FFF;
+    position: relative;
+    .row {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        height: 300px;
+        background: image-url('pixel.png');
+        background-size: cover;
+    }
+    .main_logo {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 30px 0;
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        &.no_logo {
+            position: absolute;
+            bottom: 0;
+            top: auto;
+        }
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: 300;
+        margin: 5% 0;
+    }
+    p {
+        margin: 0 0 7%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: 'Montserrat';
+    }
+    ul {
+        li {
+            font-weight: 700;
+            font-size: 15px;
+            padding-left: 15px;
+            font-family: 'Montserrat';
+        }
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    .name {
+        font-weight: 800;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    .email, .tel {
+        font-size: 14px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        line-height: 16px;
+    }
+    .button {
+        padding: 7px 50px;
+        margin-top: 8%;
+        position: relative;
+        a {
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-size: 13px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 50%;
+            width: 70px;
+            height: 1px;
+            background: #FFF;
+        }
+        &:after {
+            content: '<';
+            position: absolute;
+            left: -35px;
+            top: 50%;
+            color: #FFF;
+            margin-top: -7px;
         }
     }
 }
