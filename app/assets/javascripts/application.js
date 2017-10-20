@@ -28,6 +28,13 @@ $(function() {
         }
     });
 
+    $('.blog').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('nav').offset().top
+        }, 1000);
+    });
+
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         var height = $('.banner').height() - 94;

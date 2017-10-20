@@ -4,9 +4,9 @@
             nav
                 ul
                     li= link_to 'Uslugi', uslugi_pages_path, class: "#{'active' if yield(:path) == 'uslugi' }"
-                    li= link_to 'O kancelarii', about_pages_path, class: "#{'active' if yield(:path) == 'about' }"
+                    /li= link_to 'O kancelarii', about_pages_path, class: "#{'active' if yield(:path) == 'about' }"
                     li= link_to 'Kontakt', contacts_pages_path, class: "#{'active' if yield(:path) == 'contacts' }"
-                    li= link_to 'Blog', blog_pages_path, class: "#{'active' if yield(:path) == 'blog' }"
+                    li= link_to 'Blog', '#', class: 'blog'
                 .links
                     = link_to image_tag('facebook.png'), '#'
                     = link_to image_tag('linkedin.png'), '#'
@@ -19,6 +19,6 @@
                 .logo= link_to 'Delegowanie24', root_path
                 ul
                     li= link_to 'Uslugi', uslugi_pages_path, class: "#{'active' if yield(:path) == 'uslugi' }"
-                    li= link_to 'O kancelarii', about_pages_path, class: "#{'active' if yield(:path) == 'about' }"
+                    /li= link_to 'O kancelarii', about_pages_path, class: "#{'active' if yield(:path) == 'about' }"
                     li= link_to 'Kontakt', contacts_pages_path, class: "#{'active' if yield(:path) == 'contacts' }"
-                    li= link_to 'Blog', blog_pages_path, class: "#{'active' if yield(:path) == 'blog' }"
+                    li= link_to 'Blog', '#', class: 'blog'
