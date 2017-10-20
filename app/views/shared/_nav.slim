@@ -3,7 +3,8 @@
         .columns.small-12
             nav
                 ul
-                    li= link_to 'Uslugi', '#', 'data-open'=>'uslugi'
+                    li
+                        button.button.from_menu data-open='uslugi' Uslugi
                     /li= link_to 'O kancelarii', about_pages_path, class: "#{'active' if yield(:path) == 'about' }"
                     li= link_to 'Kontakt', contacts_pages_path, class: "#{'active' if yield(:path) == 'contacts' }"
                     li= link_to 'Blog', '#', class: 'blog'
@@ -22,7 +23,8 @@
             .name
                 .logo= link_to 'Delegowanie24', root_path
                 ul
-                    li= link_to 'Uslugi', '#', 'data-open'=>'uslugi'
+                    li
+                        button.button.from_menu data-open='uslugi' Uslugi
                     /li= link_to 'O kancelarii', about_pages_path, class: "#{'active' if yield(:path) == 'about' }"
                     li= link_to 'Kontakt', contacts_pages_path, class: "#{'active' if yield(:path) == 'contacts' }"
                     li= link_to 'Blog', '#', class: 'blog'
