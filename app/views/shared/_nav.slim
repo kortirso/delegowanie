@@ -1,4 +1,4 @@
-.nav.no_logo
+#logo.nav.no_logo name='logo'
     .row
         .columns.small-12
             nav
@@ -7,7 +7,7 @@
                         button.button.from_menu data-open='uslugi' Uslugi
                     /li= link_to 'O kancelarii', about_pages_path, class: "#{'active' if yield(:path) == 'about' }"
                     li= link_to 'Kontakt', contacts_pages_path, class: "#{'active' if yield(:path) == 'contacts' }"
-                    li= link_to 'Blog', '#', class: 'blog'
+                    li= link_to 'Blog', root_path(anchor: 'logo'), class: 'blog'
                 .links
                     = link_to image_tag('facebook.png'), '#'
                     = link_to image_tag('linkedin.png'), '#'
@@ -27,4 +27,4 @@
                         button.button.from_menu data-open='uslugi' Uslugi
                     /li= link_to 'O kancelarii', about_pages_path, class: "#{'active' if yield(:path) == 'about' }"
                     li= link_to 'Kontakt', contacts_pages_path, class: "#{'active' if yield(:path) == 'contacts' }"
-                    li= link_to 'Blog', '#', class: 'blog'
+                    li= link_to 'Blog', root_path(anchor: 'logo'), class: 'blog'

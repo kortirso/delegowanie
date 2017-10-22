@@ -1,11 +1,21 @@
 class PagesController < ApplicationController
-    def index; end
+    def index
+        session[:current_page] = __method__
+    end
 
-    def contacts; end
+    def contacts
+        session[:current_page] = __method__
+    end
 
-    def uslugi; end
+    def uslugi
+        session[:current_page] = __method__
+    end
 
-    def about; end
+    def about
+        session[:current_page] = __method__
+    end
 
-    def blog; end
+    def blog
+        session[:current_page] = __method__
+    end
 end

@@ -1,7 +1,7 @@
-.banner
+#index.banner
     .row
         .columns.medium-6
-            .main_logo Delegowanie24
+            .main_logo= link_to 'Delegowanie24', root_path
             .block
                 h1
                     | Usługi skrojone
@@ -70,3 +70,9 @@ section.text_block
                         p Address
 = render 'shared/footer'
 = render 'shared/uslugi'
+- if session[:previous_page] == 'uslugi'
+    javascript:
+        $(function() {
+            $('#uslugi').foundation('toggle');
+        });
+

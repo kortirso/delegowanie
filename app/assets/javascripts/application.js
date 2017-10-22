@@ -28,7 +28,7 @@ $(function() {
         }
     });
 
-    $('.blog').on('click', function (e) {
+    $('#index .blog').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $('nav').offset().top
