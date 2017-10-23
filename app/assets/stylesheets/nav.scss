@@ -117,3 +117,30 @@
         }
     }
 }
+
+@media (max-width: 639px) {
+    .nav {
+        &.no_logo {
+            .name {
+                ul {
+                    width: 100%;
+                    text-align: right;
+                }
+            }
+        }
+        nav {
+            ul {
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        .name {
+            .logo {
+                a {
+                    display: block;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
