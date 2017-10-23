@@ -35,6 +35,13 @@ $(function() {
         }, 1000);
     });
 
+    $('#uslugi').on('click', function (e) {
+        if(e.target.id == 'uslugi') {
+            e.preventDefault();
+            $('#uslugi').foundation('toggle');
+        }
+    });
+
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         var height = $('.banner').height() - 94;
