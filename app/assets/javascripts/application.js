@@ -18,6 +18,36 @@
 $(function() {
     $(document).foundation();
 
+    var page_count = $('.other_articles').data('pages');
+    $('#page_1').show();
+    if (page_count > 1) {
+        $('.text_block .buttons .button a').on('click', function (e) {
+            e.preventDefault();
+            var current = parseInt($('.other_articles').attr('data-page'));
+            var next;
+            if(e.target.id == 'poprzednie') {
+                if (current == 1) {
+                    next = page_count;
+                } else {
+                    next = current - 1;
+                }
+            } else if (e.target.id == 'nastepne') {
+                if (current == page_count) {
+                    next = 1;
+                } else {
+                    next = current + 1;
+                }
+            }
+            $('#page_' + current).fadeOut('slow', function() {
+                $('#page_' + next).fadeIn('slow');
+            });
+            $('.other_articles').attr('data-page', next);
+        });
+
+    } else {
+        $('.text_block .buttons').hide();
+    }
+
     $('.call a').on('click', function (e) {
         e.preventDefault();
         var elem = $('nav .phone');
