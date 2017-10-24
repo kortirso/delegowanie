@@ -143,52 +143,13 @@ body {
 }
 
 .banner_uslugi {
-    height: 100%;
-    background: image-url('background.png');
-    background-size: cover;
-    background-position: bottom right;
-    color: #FFF;
-    position: relative;
-    .row {
-        position: relative;
-        z-index: 2;
-        height: 100%;
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 400px;
-        height: 400px;
-        background: image-url('pixel.png');
-        background-size: cover;
-    }
-    .main_logo {
-        a {
-            font-size: 30px;
-            font-weight: 600;
-            margin: 30px 0;
-            display: block;
-            color: #FFF;
-        }
-    }
-    .nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 2;
-        &.no_logo {
-            position: absolute;
-            bottom: 0;
-            top: auto;
-        }
+    .columns {
+        padding: 0;
     }
     h2 {
         font-size: 28px;
         font-weight: 300;
-        margin: 5% 0;
+        margin: 3% 0;
     }
     p {
         margin: 0 0 7%;
@@ -602,6 +563,9 @@ body {
                 bottom: 80px;
             }
         }
+    }
+    #second_popup {
+        display: none;
     }
 }
 

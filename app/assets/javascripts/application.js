@@ -72,6 +72,20 @@ $(function() {
         }
     });
 
+    $('#uslugi .block a').on('click', function (e) {
+        e.preventDefault();
+        $('#uslugies').fadeOut('slow', function() {
+            $('#second_popup').fadeIn('slow');
+        });
+    });
+
+    $('#uslugi #wroc').on('click', function (e) {
+        e.preventDefault();
+        $('#second_popup').fadeOut('slow', function() {
+            $('#uslugies').fadeIn('slow');
+        });
+    });
+
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         var height = $('.banner').height() - 94;

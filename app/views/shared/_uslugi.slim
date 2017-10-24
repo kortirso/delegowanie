@@ -1,25 +1,40 @@
 #uslugi.reveal.full data-reveal=''
     .row
-        .columns.medium-6
-            .main_logo= link_to 'Delegowanie24', root_path
-    .row
+        .main_logo= link_to 'Delegowanie24', root_path
+    #uslugies.row
         .blocks
             .block
-                = link_to 'Transgeniczne delegowanie pracownikow', uslugi_pages_path
+                = link_to 'Transgeniczne delegowanie pracownikow', '#'
             .block
-                = link_to 'Transgeniczne delegowanie pracownikow', uslugi_pages_path
+                = link_to 'Transgeniczne delegowanie pracownikow', '#'
             .block
-                = link_to 'Transgeniczne delegowanie pracownikow', uslugi_pages_path
+                = link_to 'Transgeniczne delegowanie pracownikow', '#'
             .block
-                = link_to 'Transgeniczne delegowanie pracownikow', uslugi_pages_path
+                = link_to 'Transgeniczne delegowanie pracownikow', '#'
             .block
-                = link_to 'Transgeniczne delegowanie pracownikow', uslugi_pages_path
+                = link_to 'Transgeniczne delegowanie pracownikow', '#'
             .block
-                = link_to 'Transgeniczne delegowanie pracownikow', uslugi_pages_path
+                = link_to 'Transgeniczne delegowanie pracownikow', '#'
             .block
-                = link_to 'Transgeniczne delegowanie pracownikow', uslugi_pages_path
+                = link_to 'Transgeniczne delegowanie pracownikow', '#'
             .block
-                = link_to 'Transgeniczne delegowanie pracownikow', uslugi_pages_path
+                = link_to 'Transgeniczne delegowanie pracownikow', '#'
+    #second_popup.row
+        .banner_uslugi
+            h2 Transgeniczne delegowanie pracownikow
+            .columns.medium-7
+                p Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                ul
+                    li Lorem ipsum Lorem ipsum
+                    li Lorem ipsum Lorem ipsum
+                    li Lorem ipsum Lorem ipsum
+                    li Lorem ipsum Lorem ipsum
+                .button.wroc= link_to 'Wroc', root_path, id: 'wroc'
+            .columns.medium-4.medium-offset-1
+                h3 Zaproszenie do kontaktu lorem ipsum dolor sit amet cons
+                .name Jan Kowalski
+                .tel +48 123 456 789
+                .email jan.kowalski@delegowanie24.pl
     = render 'shared/nav'
     button.close-button aria-label=('Close modal') data-close='' type='button'
         span aria-hidden='true' &times;
