@@ -289,6 +289,17 @@ body {
             &.bold {
                 color: #23395f;
             }
+            p {
+                display: none;
+            }
+            &.open {
+                p {
+                    display: block;
+                    color: #888;
+                    font-family: 'Montserrat';
+                    margin: 20px 0 40px;
+                }
+            }
         }
         &.about {
             border-bottom: none;

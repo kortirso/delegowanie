@@ -14,55 +14,60 @@
 section.text_block
     .row
         .columns.medium-8
-            .main_article#blog
-                .title Tytul
-                .date 23.2017
-                .photo= image_tag 'article_main.jpg'
-                .text Lorem ipsum dolor
-                .button= link_to 'Czytaj dalej', '#'
-            .other_articles data-page=1 data-pages=2
+            #blog.main_article data-page=1 data-pages=4
                 #page_1.page
-                    .article
-                        .photo= image_tag 'article.jpg'
-                        .title Tytul 1
-                        .text Lorem ipsum dolor
-                        .date 23.2017
-                    .article
-                        .photo= image_tag 'article.jpg'
-                        .title Tytul 1
-                        .text Lorem ipsum dolor
-                        .date 23.2017
-                    .article
-                        .photo= image_tag 'article.jpg'
-                        .title Tytul 1
-                        .text Lorem ipsum dolor
-                        .date 23.2017
-                    .article
-                        .photo= image_tag 'article.jpg'
-                        .title Tytul 1
-                        .text Lorem ipsum dolor
-                        .date 23.2017
+                    .title Tytul 1
+                    .date 23.2017
+                    .photo= image_tag 'article_main.jpg'
+                    .text
+                        | Lorem ipsum dolor
+                        p Additional text
+                    .button= link_to 'Czytaj dalej', '#', class: 'dalej'
                 #page_2.page
-                    .article
-                        .photo= image_tag 'article.jpg'
-                        .title Tytul 2
-                        .text Lorem ipsum dolor
-                        .date 23.2017
-                    .article
-                        .photo= image_tag 'article.jpg'
-                        .title Tytul 2
-                        .text Lorem ipsum dolor
-                        .date 23.2017
-                    .article
-                        .photo= image_tag 'article.jpg'
-                        .title Tytul 2
-                        .text Lorem ipsum dolor
-                        .date 23.2017
-                    .article
-                        .photo= image_tag 'article.jpg'
-                        .title Tytul 2
-                        .text Lorem ipsum dolor
-                        .date 23.2017
+                    .title Tytul 2
+                    .date 23.2017
+                    .photo= image_tag 'article_main.jpg'
+                    .text
+                        | Lorem ipsum dolor
+                        p Additional text
+                    .button= link_to 'Czytaj dalej', '#', class: 'dalej'
+                #page_3.page
+                    .title Tytul 3
+                    .date 23.2017
+                    .photo= image_tag 'article_main.jpg'
+                    .text
+                        | Lorem ipsum dolor
+                        p Additional text
+                    .button= link_to 'Czytaj dalej', '#', class: 'dalej'
+                #page_4.page
+                    .title Tytul 4
+                    .date 23.2017
+                    .photo= image_tag 'article_main.jpg'
+                    .text
+                        | Lorem ipsum dolor
+                        p Additional text
+                    .button= link_to 'Czytaj dalej', '#', class: 'dalej'
+            .other_articles
+                .article data-page=1
+                    .photo= link_to image_tag('article.jpg'), '#'
+                    .title Tytul 1
+                    .text Lorem ipsum dolor
+                    .date 23.2017
+                .article data-page=2
+                    .photo= link_to image_tag('article.jpg'), '#'
+                    .title Tytul 2
+                    .text Lorem ipsum dolor
+                    .date 23.2017
+                .article data-page=3
+                    .photo= link_to image_tag('article.jpg'), '#'
+                    .title Tytul 3
+                    .text Lorem ipsum dolor
+                    .date 23.2017
+                .article data-page=4
+                    .photo= link_to image_tag('article.jpg'), '#'
+                    .title Tytul 4
+                    .text Lorem ipsum dolor
+                    .date 23.2017
             .buttons
                 .button= link_to 'Poprzednie', '#', id: 'poprzednie'
                 .button= link_to 'Nastepne', '#', id: 'nastepne'
