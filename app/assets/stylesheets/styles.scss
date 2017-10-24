@@ -36,11 +36,13 @@ body {
             background: none;
         }
         &.white {
-            background: #FFF;
-            color: #2a4064;
-            border: 1px solid #2a4064;
-            &:hover, &:focus {
+            &:hover {
                 background: #FFF;
+                color: #2a4064;
+                border: 1px solid #2a4064;
+            }
+            a {
+                color: #2a4064;
             }
         }
     }
@@ -157,7 +159,7 @@ body {
     h2 {
         font-size: 28px;
         font-weight: 300;
-        margin: 3% 0;
+        margin: 0 0 30px;
     }
     p {
         margin: 0 0 7%;
@@ -191,14 +193,23 @@ body {
     }
     .button {
         &.wroc {
-            padding: 7px 50px;
-            margin-top: 8%;
-            position: relative;
+            padding: 0;
             a {
-                color: #2a4064;
+                color: #FFF;
                 font-family: 'Montserrat';
                 font-weight: 300;
                 font-size: 13px;
+                padding: 7px 50px;
+                display: block;
+                &:hover {
+                    color: #2a4064;
+                }
+            }
+            &:hover {
+                color: #2a4064;
+                a {
+                    color: #2a4064;
+                }
             }
             &:before {
                 content: '';
@@ -585,6 +596,8 @@ body {
     }
     #second_popup {
         display: none;
+        position: relative;
+        top: 3%;
     }
 }
 
