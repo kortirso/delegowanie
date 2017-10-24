@@ -35,6 +35,14 @@ body {
         &:hover, &:focus {
             background: none;
         }
+        &.white {
+            background: #FFF;
+            color: #2a4064;
+            border: 1px solid #2a4064;
+            &:hover, &:focus {
+                background: #FFF;
+            }
+        }
     }
 }
 
@@ -187,7 +195,7 @@ body {
             margin-top: 8%;
             position: relative;
             a {
-                color: #FFF;
+                color: #2a4064;
                 font-family: 'Montserrat';
                 font-weight: 300;
                 font-size: 13px;
