@@ -308,17 +308,6 @@ body {
             &.bold {
                 color: #23395f;
             }
-            p {
-                display: none;
-            }
-            &.open {
-                p {
-                    display: block;
-                    color: #888;
-                    font-family: 'Montserrat';
-                    margin: 20px 0 40px;
-                }
-            }
         }
         &.about {
             border-bottom: none;
@@ -354,8 +343,10 @@ body {
                 }
             }
             .title {
-                color: #2a4064;
                 margin: 15px 0;
+                a {
+                    color: #2a4064;
+                }
             }
             .text {
                 color: #888;
@@ -601,7 +592,7 @@ body {
     }
 }
 
-.page {
+.hidden_part {
     display: none;
 }
 

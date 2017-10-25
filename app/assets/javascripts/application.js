@@ -18,56 +18,10 @@
 $(function() {
     $(document).foundation();
 
-    $('#page_1').show();
-    $('.text_block .buttons .button a').on('click', function (e) {
+    $('#wszystkie').on('click', function(e) {
         e.preventDefault();
-        $('html, body').animate({
-            scrollTop: $('#blog').offset().top - 91
-        }, 1000);
-
-        var page_count = parseInt($('.main_article').data('pages'));
-        var current = parseInt($('.main_article').attr('data-page'));
-        var next;
-        if(e.target.id == 'poprzednie') {
-            if (current == 1) {
-                next = page_count;
-            } else {
-                next = current - 1;
-            }
-        } else if (e.target.id == 'nastepne') {
-            if (current == page_count) {
-                next = 1;
-            } else {
-                next = current + 1;
-            }
-        }
-        $('#page_' + current).fadeOut('slow', function() {
-            $('#page_' + next).fadeIn('slow');
-            $('#page_' + next).children('.text').removeClass('open');
-            $('#page_' + next).children('.button').show();
-        });
-        $('.main_article').attr('data-page', next);
-    });
-
-    $('.dalej').on('click', function (e) {
-        e.preventDefault();
-        $(this).parent('.button').parent('.page').children('.text').addClass('open');
-        $(this).parent('.button').hide();
-    });
-
-    $('.other_articles .photo a').on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: $('#blog').offset().top - 91
-        }, 1000);
-
-        var next = parseInt($(this).parent('.photo').parent('.article').data('page'));
-        var current = parseInt($('.main_article').attr('data-page'));
-        $('#page_' + current).fadeOut('slow', function() {
-            $('#page_' + next).fadeIn('slow');
-            $('#page_' + next).children('.text').removeClass('open');
-            $('#page_' + next).children('.button').show();
-        });
+        $('.hidden_part').fadeIn('slow');
+        $(this).hide();
     });
 
     $('.call a').on('click', function (e) {

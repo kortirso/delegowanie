@@ -19,22 +19,19 @@ section.text_block
             h2 Powiazane artykuly:
             .other_articles.about
                 .article
-                    .photo= image_tag 'article.jpg'
-                    .title Tytul
+                    .photo= link_to image_tag('article.jpg'), blog_pages_path
+                    .title= link_to 'Tytul 1', blog_pages_path
                     .text Lorem ipsum dolor
                     .date 23.2017
                 .article
-                    .photo= image_tag 'article.jpg'
-                    .title Tytul
+                    .photo= link_to image_tag('article.jpg'), blog_pages_path
+                    .title= link_to 'Tytul 2', blog_pages_path
                     .text Lorem ipsum dolor
                     .date 23.2017
                 .article
-                    .photo= image_tag 'article.jpg'
-                    .title Tytul
+                    .photo= link_to image_tag('article.jpg'), blog_pages_path
+                    .title= link_to 'Tytul 3', blog_pages_path
                     .text Lorem ipsum dolor
                     .date 23.2017
-            .buttons
-                .button= link_to 'Poprzednie', '#'
-                .button= link_to 'Nastepne', '#'
 = render 'shared/footer'
 = render 'shared/uslugi'

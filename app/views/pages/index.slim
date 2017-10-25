@@ -14,63 +14,57 @@
 section.text_block
     .row
         .columns.medium-8
-            #blog.main_article data-page=1 data-pages=4
-                #page_1.page
-                    .title Tytul 1
-                    .date 23.2017
-                    .photo= image_tag 'article_main.jpg'
-                    .text
-                        | Lorem ipsum dolor
-                        p Additional text
-                    .button= link_to 'Czytaj dalej', '#', class: 'dalej'
-                #page_2.page
-                    .title Tytul 2
-                    .date 23.2017
-                    .photo= image_tag 'article_additional.jpg'
-                    .text
-                        | Lorem ipsum dolor
-                        p Additional text
-                    .button= link_to 'Czytaj dalej', '#', class: 'dalej'
-                #page_3.page
-                    .title Tytul 3
-                    .date 23.2017
-                    .photo= image_tag 'article_additional.jpg'
-                    .text
-                        | Lorem ipsum dolor
-                        p Additional text
-                    .button= link_to 'Czytaj dalej', '#', class: 'dalej'
-                #page_4.page
-                    .title Tytul 4
-                    .date 23.2017
-                    .photo= image_tag 'article_additional.jpg'
-                    .text
-                        | Lorem ipsum dolor
-                        p Additional text
-                    .button= link_to 'Czytaj dalej', '#', class: 'dalej'
+            #blog.main_article
+                .title Tytul 1
+                .date 23.2017
+                .photo= image_tag 'article_main.jpg'
+                .text Lorem ipsum dolor
+                .button= link_to 'Czytaj dalej', blog_pages_path
             .other_articles
-                .article data-page=1
-                    .photo= link_to image_tag('article.jpg'), '#'
-                    .title Tytul 1
-                    .text Lorem ipsum dolor
-                    .date 23.2017
-                .article data-page=2
-                    .photo= link_to image_tag('article.jpg'), '#'
-                    .title Tytul 2
-                    .text Lorem ipsum dolor
-                    .date 23.2017
-                .article data-page=3
-                    .photo= link_to image_tag('article.jpg'), '#'
-                    .title Tytul 3
-                    .text Lorem ipsum dolor
-                    .date 23.2017
-                .article data-page=4
-                    .photo= link_to image_tag('article.jpg'), '#'
-                    .title Tytul 4
-                    .text Lorem ipsum dolor
-                    .date 23.2017
+                .main_part
+                    .article
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 1', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
+                    .article
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 2', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
+                    .article
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 3', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
+                    .article 
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 4', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
+                .hidden_part
+                    .article
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 1', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
+                    .article
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 2', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
+                    .article
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 3', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
+                    .article 
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 4', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
             .buttons
-                .button= link_to 'Poprzednie', '#', id: 'poprzednie'
-                .button= link_to 'Nastepne', '#', id: 'nastepne'
+                .button= link_to 'Wszystkie', '#', id: 'wszystkie'
         .columns.medium-4
             .right_block
                 .block.editors
