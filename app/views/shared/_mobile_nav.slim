@@ -1,0 +1,11 @@
+nav.mobile_nav
+    .title-bar data-responsive-toggle='example-menu'
+        button.menu-icon type='button' data-toggle='example-menu'
+        .title-bar-title= link_to 'Delegowanie24', root_path
+    .top-bar#example-menu
+        .top-bar-left
+            ul.menu.vertical.medium-horizontal
+                li= link_to 'Main page', root_path
+                li= link_to 'Kontakt', contacts_pages_path
+                li= link_to 'Blog', root_path(anchor: 'logo'), class: 'blog'
+                

@@ -19,3 +19,28 @@ footer {
         }
     }
 }
+
+@media (max-width: 639px) {
+    footer {
+        padding: 0;
+        .columns {
+            padding: 0;
+        }
+        p {
+            &.white {
+                background: #FFF;
+                text-align: center;
+                padding: 15px 0;
+                color: #2a4064;
+            }
+            &.right {
+                background: #000;
+                color: #FFF;
+                text-align: center;
+                span {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
