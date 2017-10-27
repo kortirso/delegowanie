@@ -1,37 +1,39 @@
 - provide(:path, 'about')
+= render 'shared/mobile_nav'
 = render 'shared/nav_logo'
-section.text_block
-    .row
-        .columns.medium-8
-            .main_article.about
-                .title Tytul
-                .photo= image_tag 'article_main.jpg'
-                .text.bold Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                h3 Lorem ipsum dolor
-                .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                h3 Lorem ipsum dolor
-                .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                .date Jan Kowalski | 23.2017
-    .row
-        .columns.small-12.about_block
-            h2 Powiazane artykuly:
-            .other_articles.about
-                .article
-                    .photo= link_to image_tag('article.jpg'), blog_pages_path
-                    .title= link_to 'Tytul 1', blog_pages_path
-                    .text Lorem ipsum dolor
-                    .date 23.2017
-                .article
-                    .photo= link_to image_tag('article.jpg'), blog_pages_path
-                    .title= link_to 'Tytul 2', blog_pages_path
-                    .text Lorem ipsum dolor
-                    .date 23.2017
-                .article
-                    .photo= link_to image_tag('article.jpg'), blog_pages_path
-                    .title= link_to 'Tytul 3', blog_pages_path
-                    .text Lorem ipsum dolor
-                    .date 23.2017
+.blog
+    section.text_block
+        .row
+            .columns.medium-8
+                .main_article.about
+                    .title Tytul
+                    .photo= image_tag 'article_main.jpg'
+                    .text.bold Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                    .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                    .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                    h3 Lorem ipsum dolor
+                    .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                    h3 Lorem ipsum dolor
+                    .text Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                    .date Jan Kowalski | 23.2017
+        .row
+            .columns.small-12.about_block
+                h2 Powiazane artykuly:
+                .other_articles.about
+                    .article
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 1', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
+                    .article
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 2', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
+                    .article
+                        .photo= link_to image_tag('article.jpg'), blog_pages_path
+                        .title= link_to 'Tytul 3', blog_pages_path
+                        .text Lorem ipsum dolor
+                        .date 23.2017
 = render 'shared/footer'
 = render 'shared/uslugi'

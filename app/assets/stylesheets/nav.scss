@@ -1,7 +1,7 @@
 .nav {
     background: #FFF;
     .name {
-        padding: 25px 0;
+        padding: 29px 0;
         margin: 0;
         .logo {
             a {
@@ -14,7 +14,7 @@
             display: none;
         }
     }
-    &.no_logo {
+    &.no_logo, &.no_logo_popup {
         .name {
             .logo {
                 display: none;
@@ -120,7 +120,8 @@
 
 @media (max-width: 639px) {
     .nav {
-        &.no_logo {
+        display: none;
+        &.no_logo, &.no_logo_popup {
             .name {
                 ul {
                     width: 100%;

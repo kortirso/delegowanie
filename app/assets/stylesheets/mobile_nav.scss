@@ -7,8 +7,12 @@
     background: none;
     z-index: 2;
     .title-bar {
-        background: none;
+        background: rgba(36,73,136,0.75);
         padding: 25px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
         .menu-icon {
             position: absolute;
             right: 25px;
@@ -28,8 +32,10 @@
         }
     }
     .top-bar {
-        background: none;
-        padding: 0 0.5rem;
+        background: rgba(36,73,136,0.75);
+        padding: 89px 0.5rem 0;
+        height: 100%;
+        align-items: flex-start;
         ul {
             background: none;
             li {

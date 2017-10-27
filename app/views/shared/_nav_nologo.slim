@@ -1,12 +1,7 @@
-.nav
+.nav.no_logo_popup
     .row
         .columns.small-12
             nav
-                ul
-                    li
-                        button.button.from_menu data-open='uslugi' Usługi
-                    li= link_to 'Kontakt', contacts_pages_path, class: "#{'active' if yield(:path) == 'contacts' }"
-                    li= link_to 'Blog', root_path(anchor: 'logo'), class: 'blog'
                 .links
                     = link_to image_tag('facebook.png'), '#'
                     = link_to image_tag('linkedin.png'), '#'
@@ -20,4 +15,8 @@
                     .tel +48 123 456 789
                     .email kontakt@delegowanie24.pl
             .name
-                .logo= link_to 'Delegowanie24', root_path
+                ul
+                    li
+                        button.button.from_menu data-open='uslugi' Usługi
+                    li= link_to 'Kontakt', contacts_pages_path, class: "#{'active' if yield(:path) == 'contacts' }"
+                    li= link_to 'Blog', root_path(anchor: 'logo'), class: 'blog'

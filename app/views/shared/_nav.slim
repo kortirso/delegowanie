@@ -4,7 +4,7 @@
             nav
                 ul
                     li
-                        button.button.from_menu data-open='uslugi' Uslugi
+                        button.button.from_menu data-open='uslugi' Usługi
                     li= link_to 'Kontakt', contacts_pages_path, class: "#{'active' if yield(:path) == 'contacts' }"
                     li= link_to 'Blog', root_path(anchor: 'logo'), class: 'blog'
                 .links
@@ -23,6 +23,6 @@
                 .logo= link_to 'Delegowanie24', root_path
                 ul
                     li
-                        button.button.from_menu data-open='uslugi' Uslugi
+                        button.button.from_menu data-open='uslugi' Usługi
                     li= link_to 'Kontakt', contacts_pages_path, class: "#{'active' if yield(:path) == 'contacts' }"
                     li= link_to 'Blog', root_path(anchor: 'logo'), class: 'blog'

@@ -37,7 +37,7 @@ $(function() {
     $('#index .blog').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $('nav').offset().top
+            scrollTop: $('#logo').offset().top
         }, 1000);
     });
 
@@ -66,10 +66,10 @@ $(function() {
         var scroll = $(window).scrollTop();
         var height = $('.banner').height() - 91;
         if (scroll >= height) {
-            $('.nav').removeClass('no_logo');
+            $('#logo').removeClass('no_logo');
         } else {
-            if ($('.nav').hasClass('no_logo') == false) {
-                $('.nav').addClass('no_logo');
+            if ($('#logo').hasClass('no_logo') == false) {
+                $('#logo').addClass('no_logo');
             }
         }
     });
